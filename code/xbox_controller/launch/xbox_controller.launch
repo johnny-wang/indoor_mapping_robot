@@ -1,0 +1,7 @@
+<launch>
+    <!-- Don't forget to run 'sudo xboxdrv` first-->
+
+    <node name="run_joy" respawn="true" pkg="joy" type="joy_node" />
+
+    <node name="run_xbox_controller" respawn="true" pkg="xbox_controller" type="controller_output.py" />
+</launch>
