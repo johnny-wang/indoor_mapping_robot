@@ -32,7 +32,7 @@ def joy_xbox_controller():
     pub_left_leftright  = rospy.Publisher(topic_l_leftright, Float32, queue_size=10)
     pub_right_updown    = rospy.Publisher(topic_r_updown,    Float32, queue_size=10)
     pub_right_leftright = rospy.Publisher(topic_r_leftright, Float32, queue_size=10)
-    rospy.Subscriber('joy', Joy, joy_callback)
+    rospy.Subscriber('/joy', Joy, joy_callback)
     rospy.init_node('XboxControllerOuput')
     rospy.spin()
 

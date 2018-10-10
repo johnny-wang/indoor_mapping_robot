@@ -37,3 +37,13 @@ sudo apt-get install xboxdrv
 sudo xboxdrv
 ```
 6. Plug in wireless receiver and pair with xbox controller
+7. Run code from `xbox_controller` to publish left/right joystick actions
+
+### ROS Serial Communication with Arudino
+
+This is to communicate with the Hercules motors.
+
+```
+sudo apt-get install ros-kinetic-rosserial-arduino
+sudo apt-get install ros-kinetic-rosserial
+```
